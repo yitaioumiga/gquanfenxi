@@ -1,0 +1,31 @@
+{
+    "化工": {
+        "avg_pb": 2.5,
+        "avg_pe": 15,
+        "avg_ev_fcf": 12,
+        "pb_range": [0.5, 5.0],
+        "pe_range": [5, 30],
+        "ev_fcf_range": [5, 20]
+    },
+    "汽车": {
+        "avg_pb": 3.0,
+        "avg_pe": 20,
+        "avg_ev_fcf": 15,
+        "pb_range": [1.0, 6.0],
+        "pe_range": [10, 40],
+        "ev_fcf_range": [8, 25],
+        "avg_growth_rate": 0.04
+    },
+    "科技": {
+        "avg_pb": 4.0,
+        "avg_pe": 25,
+        "avg_ev_fcf": 20,
+        "ps_ratio": 3.0,
+        "pb_range": [1.5, 8.0],
+        "pe_range": [15, 50],
+        "ev_fcf_range": [12, 30],
+        "avg_growth_rate": 0.05,
+        "revenue_weight": 0.4,
+        "profit_weight": 0.6
+    }
+}

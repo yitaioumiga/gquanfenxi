@@ -1,0 +1,59 @@
+{
+    "600309": {
+        "company_name": "万华化学",
+        "financial_data": [
+            {
+                "report_date": "2023-12-31",
+                "revenue": 100000000000,
+                "net_profit": 15000000000,
+                "operating_cash_flow": 20000000000,
+                "capital_expenditure": 5000000000,
+                "total_assets": 150000000000,
+                "total_liabilities": 70000000000,
+                "financial_assets": 10000000000,
+                "long_term_investments": 5000000000,
+                "minority_interest_ratio": 0.1,
+                "total_shares": 3000000000
+            },
+            {
+                "report_date": "2023-09-30",
+                "revenue": 95000000000,
+                "net_profit": 14000000000,
+                "operating_cash_flow": 18000000000,
+                "capital_expenditure": 4500000000,
+                "total_assets": 145000000000,
+                "total_liabilities": 68000000000,
+                "financial_assets": 9500000000,
+                "long_term_investments": 5000000000,
+                "minority_interest_ratio": 0.1,
+                "total_shares": 3000000000
+            },
+            {
+                "report_date": "2023-06-30",
+                "revenue": 92000000000,
+                "net_profit": 13500000000,
+                "operating_cash_flow": 17000000000,
+                "capital_expenditure": 4200000000,
+                "total_assets": 142000000000,
+                "total_liabilities": 67000000000,
+                "financial_assets": 9200000000,
+                "long_term_investments": 5000000000,
+                "minority_interest_ratio": 0.1,
+                "total_shares": 3000000000
+            },
+            {
+                "report_date": "2023-03-31",
+                "revenue": 88000000000,
+                "net_profit": 13000000000,
+                "operating_cash_flow": 16000000000,
+                "capital_expenditure": 4000000000,
+                "total_assets": 140000000000,
+                "total_liabilities": 66000000000,
+                "financial_assets": 9000000000,
+                "long_term_investments": 5000000000,
+                "minority_interest_ratio": 0.1,
+                "total_shares": 3000000000
+            }
+        ]
+    }
+}

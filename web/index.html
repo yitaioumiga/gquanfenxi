@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票估值分析工具</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 搜索区域 -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="stockSearch" placeholder="输入股票代码或名称...">
+                <button id="searchBtn">搜索</button>
+            </div>
+            <div id="searchProgress" class="progress-container"></div>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <!-- 参数配置面板 -->
+        <div class="config-panel">
+            <h3>估值参数配置</h3>
+            <div class="param-group">
+                <label>折现率</label>
+                <input type="range" id="discountRate" min="5" max="15" step="0.5" value="10">
+                <span id="discountRateValue">10%</span>
+            </div>
+            <div class="param-group">
+                <label>永续增长率</label>
+                <input type="range" id="growthRate" min="0" max="5" step="0.1" value="3">
+                <span id="growthRateValue">3%</span>
+            </div>
+            <div class="param-group">
+                <label>预测周期</label>
+                <select id="forecastPeriod">
+                    <option value="5">5年</option>
+                    <option value="10">10年</option>
+                    <option value="custom">自定义</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 结果展示区域 -->
+        <div class="result-section">
+            <div class="value-matrix">
+                <h3>估值结果</h3>
+                <div class="matrix-grid">
+                    <div class="matrix-item">
+                        <label>企业价值</label>
+                        <span id="enterpriseValue">-</span>
+                    </div>
+                    <div class="matrix-item">
+                        <label>股权价值</label>
+                        <span id="equityValue">-</span>
+                    </div>
+                    <div class="matrix-item">
+                        <label>每股估值</label>
+                        <span id="perShareValue">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="validation-board">
+                <h3>合理性验证</h3>
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <label>市盈率(P/E)</label>
+                        <span id="peRatio">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <label>市净率(P/B)</label>
+                        <span id="pbRatio">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <label>EV/FCF</label>
+                        <span id="evFcfRatio">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
